@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أكاديمية ديبسيك للهاكر الأخلاقي</title>
+    <style>
+        /* الأنيميشنات */
+        @keyframes glow {
+            0% { text-shadow: 0 0 10px #ff0000; }
+            50% { text-shadow: 0 0 20px #00ff00, 0 0 30px #0000ff; }
+            100% { text-shadow: 0 0 10px #ff0000; }
+        }
+        
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(45deg, #ff0000, #0000ff, #00ff00);
+            animation: glow 2s infinite;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #ffd700;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        h2 {
+            color: #00ff00;
+            border-right: 5px solid #ff0000;
+            padding-right: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: #1a1a1a;
+        }
+
+        th {
+            background-color: #0000ff;
+            color: #fff;
+            padding: 15px;
+            font-size: 1.2em;
+        }
+
+        td {
+            padding: 15px;
+            border: 2px solid #00ff00;
+            vertical-align: top;
+        }
+
+        .command {
+            color: #ffff00;
+            font-family: 'Courier New', monospace;
+            direction: ltr;
+            text-align: left;
+            width: 35%;
+        }
+
+        .description {
+            color: #00ff00;
+            width: 65%;
+        }
+
+        .chat-bubble {
+            background: #2d2d2d;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 15px 0;
+            border: 2px solid #ff0000;
+        }
+
+        .user {
+            color: #00ffff;
+        }
+
+        .gpt {
+            color: #ff69b4;
+        }
+
+        code {
+            display: block;
+            background: #000;
+            color: #00ff00;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            direction: ltr;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🏆 أكاديمية ديبسيك للهاكر الأخلاقي 🛡️</h1>
+        <p>معكم من المبتدئ إلى المحترف في 60 يومًا!</p>
+    </div>
+
+    <div class="chat-bubble">
+        <div class="user">👦 أنت: كيف أبدأ في تعلم البرمجة على كالي لينكس؟</div>
+        <div class="gpt">🤖 GPT: ابدأ بهذه الأوامر الأساسية:</div>
+    </div>
+
+    <h2>🚀 أهم 70 أمر في لينكس (أوامر على اليسار، شرح على اليمين)</h2>
+    <table>
+        <tr>
+            <th class="command">الأمر</th>
+            <th class="description">الشرح</th>
+        </tr>
+        <!-- أساسيات النظام -->
+        <tr>
+            <td class="command">sudo apt update</td>
+            <td class="description">تحديث قائمة الحزم</td>
+        </tr>
+        <tr>
+            <td class="command">sudo apt upgrade -y</td>
+            <td class="description">ترقية النظام بالكامل</td>
+        </tr>
+        <tr>
+            <td class="command">man [command]</td>
+            <td class="description">عرض الدليل الرسمي للأمر</td>
+        </tr>
+        <!-- إدارة الملفات -->
+        <tr>
+            <td class="command">ls -la</td>
+            <td class="description">عرض جميع الملفات (بما فيها المخفية)</td>
+        </tr>
+        <tr>
+            <td class="command">cp -r dir1 dir2</td>
+            <td class="description">نسخ مجلد كامل</td>
+        </tr>
+        <tr>
+            <td class="command">mv old.txt new.txt</td>
+            <td class="description">إعادة تسمية الملف</td>
+        </tr>
+        <!-- البرمجة -->
+        <tr>
+            <td class="command">python3 script.py</td>
+            <td class="description">تشغيل سكريبت بايثون</td>
+        </tr>
+        <tr>
+            <td class="command">node index.js</td>
+            <td class="description">تشغيل تطبيق Node.js</td>
+        </tr>
+        <!-- الشبكات -->
+        <tr>
+            <td class="command">nmap -sV 192.168.1.1</td>
+            <td class="description">فحص المنافذ المفتوحة</td>
+        </tr>
+        <tr>
+            <td class="command">ping google.com</td>
+            <td class="description">فحص اتصال الإنترنت</td>
+        </tr>
+        <!-- إدارة العمليات -->
+        <tr>
+            <td class="command">ps aux | grep 'process'</td>
+            <td class="description">البحث عن عمليات محددة</td>
+        </tr>
+        <tr>
+            <td class="command">kill -9 [PID]</td>
+            <td class="description">إنهاء عملية قسرية</td>
+        </tr>
+        <!-- ... (يتم إضافة باقي الأوامر حتى الوصول لـ70 أمر) ... -->
+    </table>
+
+    <div class="chat-bubble">
+        <div class="user">👦 أنت: كيف أعمل موقع ويب على كالي؟</div>
+        <div class="gpt">🤖 GPT: اتبع هذه الخطوات:</div>
+        <code>
+sudo apt install apache2
+sudo systemctl start apache2
+nano /var/www/html/index.html
+        </code>
+    </div>
+
+    <h2>💡 نصائح الخبراء من ديبسيك:</h2>
+    <table>
+        <tr>
+            <td class="command">ssh user@ip -p port</td>
+            <td class="description">الاتصال بخادم بعيد</td>
+        </tr>
+        <tr>
+            <td class="command">chmod 700 file</td>
+            <td class="description">منح صلاحيات كاملة للمالك فقط</td>
+        </tr>
+        <tr>
+            <td class="command">tar -xzvf file.tar.gz</td>
+            <td class="description">فك ضغط الملفات</td>
+        </tr>
+    </table>
+
+    <div class="chat-bubble">
+        <div class="user">👦 أنت: ما أفضل لغات البرمجة للأمن السيبراني؟</div>
+        <div class="gpt">🤖 GPT: الأفضل هي:</div>
+        <ul>
+            <li>🐍 Python للبرمجة النصية</li>
+            <li>🔧 C لبرمجة الأنظمة</li>
+            <li>🛡️ SQL لفهم قواعد البيانات</li>
+        </ul>
+    </div>
+
+    <h2>⚙️ أوامر متقدمة:</h2>
+    <table>
+        <tr>
+            <td class="command">grep 'pattern' file</td>
+            <td class="description">البحث عن نص في الملف</td>
+        </tr>
+        <tr>
+            <td class="command">awk '{print $1}' file</td>
+            <td class="description">معالجة النصوص المتقدمة</td>
+        </tr>
+        <tr>
+            <td class="command">wireshark</td>
+            <td class="description">تحليل حركة الشبكة</td>
+        </tr>
+    </table>
+
+    <div style="text-align:center; margin:40px 0; color:#ff69b4; font-size:1.2em;">
+        🚀 تذكر: كل محترف كان مبتدئًا يومًا ما! 🌟
+    </div>
+        <h1>مرحبًا أيها الأبطال الصغار! 🚀</h1>
+    <h2>أنا ChatGPT، مساعدك الذكي في تعلم البرمجة!</h2>
+    <p>اليوم سنتعلم معًا كيف نستخدم **Kali Linux** للبرمجة وإنشاء المواقع والتطبيقات! 🖥️</p>
+
+    <h2>لماذا يجب أن تتعلم البرمجة على Kali Linux؟ 🤔</h2>
+    <ul>
+        <li style="color: yellow;">لأنه نظام قوي يستخدمه المحترفون في الأمن السيبراني!</li>
+        <li style="color: cyan;">يمكنك تعلم بايثون، جافاسكريبت، و HTML بسهولة!</li>
+        <li style="color: green;">يمكنك بناء تطبيقات ومواقع مميزة!</li>
+    </ul>
+
+    <h2>الأوامر الأساسية التي ستحتاجها!</h2>
+    <table>
+        <tr>
+            <th>الأمر</th>
+            <th>الوصف</th>
+        </tr>
+        <tr>
+            <td><code>sudo apt update && sudo apt upgrade -y</code></td>
+            <td>تحديث النظام</td>
+        </tr>
+        <tr>
+            <td><code>sudo apt install python3 python3-pip -y</code></td>
+            <td>تثبيت Python</td>
+        </tr>
+        <tr>
+            <td><code>sudo apt install nodejs npm -y</code></td>
+            <td>تثبيت Node.js</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th>الأمر</th>
+            <th>الوصف</th>
+        </tr>
+        <tr>
+            <td><code>sudo apt update && sudo apt upgrade -y</code></td>
+            <td>تحديث النظام بالكامل</td>
+        </tr>
+        <tr>
+            <td><code>sudo apt install [package]</code></td>
+            <td>تثبيت حزمة برمجية</td>
+        </tr>
+        <tr>
+            <td><code>sudo apt remove [package]</code></td>
+            <td>إزالة حزمة مثبتة</td>
+        </tr>
+        <tr>
+            <td><code>ls -l</code></td>
+            <td>عرض الملفات بتفاصيل كاملة</td>
+        </tr>
+        <tr>
+            <td><code>cp -r [source] [dest]</code></td>
+            <td>نسخ مجلد كامل</td>
+        </tr>
+        <tr>
+            <td><code>mv [old] [new]</code></td>
+            <td>إعادة تسمية ملف/مجلد</td>
+        </tr>
+        <tr>
+            <td><code>ping google.com</code></td>
+            <td>فحص اتصال الشبكة</td>
+        </tr>
+        <tr>
+            <td><code>ifconfig</code></td>
+            <td>عرض معلومات واجهات الشبكة</td>
+        </tr>
+        <tr>
+            <td><code>netstat -tuln</code></td>
+            <td>عرض المنافذ المفتوحة</td>
+        </tr>
+        <tr>
+            <td><code>ps aux</code></td>
+            <td>عرض جميع العمليات الجارية</td>
+        </tr>
+        <tr>
+            <td><code>kill -9 [PID]</code></td>
+            <td>إنهاء عملية قسريًا</td>
+        </tr>
+        <tr>
+            <td><code>chmod 755 [file]</code></td>
+            <td>تغيير صلاحيات الملف</td>
+        </tr>
+        <tr>
+            <td><code>chown [user]:[group] [file]</code></td>
+            <td>تغيير ملكية الملف</td>
+        </tr>
+        <tr>
+            <td><code>nano [file]</code></td>
+            <td>فتح ملف في محرر نانو</td>
+        </tr>
+        <tr>
+            <td><code>vim [file]</code></td>
+            <td>فتح ملف في محرر فيم</td>
+        </tr>
+        <tr>
+            <td><code>useradd [username]</code></td>
+            <td>إنشاء مستخدم جديد</td>
+        </tr>
+        <tr>
+            <td><code>passwd [username]</code></td>
+            <td>تغيير كلمة مرور مستخدم</td>
+        </tr>
+        <tr>
+            <td><code>systemctl start [service]</code></td>
+            <td>تشغيل خدمة النظام</td>
+        </tr>
+        <tr>
+            <td><code>systemctl stop [service]</code></td>
+            <td>إيقاف خدمة النظام</td>
+        </tr>
+        <tr>
+            <td><code>df -h</code></td>
+            <td>عرض مساحة التخزين المستخدمة</td>
+        </tr>
+        <tr>
+            <td><code>free -m</code></td>
+            <td>عرض استخدام الذاكرة</td>
+        </tr>
+        <tr>
+            <td><code>uname -a</code></td>
+            <td>عرض معلومات النظام الأساسية</td>
+        </tr>
+        <tr>
+            <td><code>ssh [user]@[host]</code></td>
+            <td>الاتصال عن بعد بخادم</td>
+        </tr>
+        <tr>
+            <td><code>scp [file] [user]@[host]:[path]</code></td>
+            <td>نسخ ملفات عبر SSH</td>
+        </tr>
+        <tr>
+            <td><code>wget [URL]</code></td>
+            <td>تنزيل ملف من الإنترنت</td>
+        </tr>
+        <tr>
+            <td><code>tar -xzvf [file.tar.gz]</code></td>
+            <td>فك ضغط ملفات tar.gz</td>
+        </tr>
+        <tr>
+            <td><code>grep 'text' [file]</code></td>
+            <td>البحث عن نص داخل ملف</td>
+        </tr>
+        <tr>
+            <td><code>find / -name [filename]</code></td>
+            <td>البحث عن ملف في النظام</td>
+        </tr>
+        <tr>
+            <td><code>history</code></td>
+            <td>عرض سجل الأوامر</td>
+        </tr>
+        <tr>
+            <td><code>alias ll='ls -alF'</code></td>
+            <td>إنشاء اسم مختصر لأمر</td>
+        </tr>
+    </table>
+
+    <!-- ابدأ قسم التحميلات -->
+<div class="deepsick-downloads">
+    <style>
+        .deepsick-downloads {
+            background: #000;
+            border: 3px solid #FF0000;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .download-link {
+            display: inline-block;
+            color: #FFFF00;
+            text-decoration: none;
+            margin: 15px;
+            padding: 15px 30px;
+            border: 2px dashed #00FF00;
+            transition: all 0.3s;
+            width: 80%;
+        }
+        
+        .download-link:hover {
+            background: #0000FF;
+            transform: scale(1.05);
+        }
+        
+        .download-title {
+            color: #FFD700;
+            font-size: 2em;
+            text-shadow: 0 0 10px #FF0000;
+            margin-bottom: 25px;
+        }
+    </style>
+
+    <h2 class="download-title">🔗 روابط مهمة من ديبسيك</h2>
+    
+    <!-- روابط التحميل -->
+    <a href="https://ubuntu.com/download" class="download-link" target="_blank">
+        ⬇️ تحميل أوبنتو الرسمي
+    </a>
+    
+    <!-- روابط التواصل -->
+    <a href="https://deepsick.com" class="download-link" target="_blank">
+        🛡️ رابط ديسك الرسمي
+    </a>
+    
+    <a href="https://chat.openai.com" class="download-link" target="_blank">
+        🤖 شات جي بي تي المباشر
+    </a>
+</div>
+
+<div class="deepsick-container">
+    <style>
+        .deepsick-container {
+            --primary: #FFD700;
+            --secondary: #FF0000;
+            --accent: #00FF00;
+            --background: #000000;
+            
+            background: var(--background);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            direction: rtl;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            border: 3px solid var(--secondary);
+            border-radius: 15px;
+        }
+
+        /* الأنيميشنات */
+        @keyframes header-glow {
+            0% { text-shadow: 0 0 10px var(--primary); }
+            50% { text-shadow: 0 0 25px var(--accent); }
+            100% { text-shadow: 0 0 10px var(--primary); }
+        }
+
+        /* الترويسة */
+        .deepsick-header {
+            text-align: center;
+            padding: 3rem;
+            background: linear-gradient(45deg, var(--secondary), var(--primary));
+            animation: header-glow 2s infinite;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        /* الجداول */
+        .deepsick-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            border: 2px solid var(--accent);
+        }
+
+        .deepsick-table th {
+            background: var(--secondary);
+            padding: 1.2rem;
+            font-size: 1.3em;
+        }
+
+        .deepsick-table td {
+            padding: 1rem;
+            border: 1px solid var(--accent);
+            vertical-align: top;
+        }
+
+        /* الأكواد */
+        .code-block {
+            display: block;
+            background: #1a1a1a;
+            color: var(--accent);
+            padding: 1.5rem;
+            margin: 1rem 0;
+            border-left: 5px solid var(--primary);
+            direction: ltr;
+            font-family: 'Courier New', monospace;
+        }
+
+        /* الروابط */
+        .deepsick-link {
+            color: var(--accent);
+            text-decoration: none;
+            transition: all 0.3s;
+            border-bottom: 2px dashed var(--primary);
+        }
+
+        .deepsick-link:hover {
+            color: var(--primary);
+            border-bottom-style: solid;
+        }
+
+        /* الأقسام الفرعية */
+        .subsection {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: #1a1a1a55;
+            border-radius: 10px;
+        }
+
+        /* روابط التحميل */
+        .download-section {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 0.5rem;
+            background: var(--secondary);
+            color: var(--primary);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <!-- الترويسة -->
+    <div class="deepsick-header">
+        <h1>🛡️ أكاديمية ديبسيك للهاكر الأخلاقي</h1>
+        <p>المرجع الشامل لتعليم الأمن السيبراني على كالي لينكس</p>
+    </div>
+
+    <!-- قسم الأوامر -->
+    <div class="subsection">
+        <h2>🗡️ أهم 70 أمر في لينكس</h2>
+        <table class="deepsick-table">
+            <tr>
+                <th>الأمر</th>
+                <th>الوصف</th>
+            </tr>
+            <tr>
+                <td><code class="code-block">sudo apt update && sudo apt full-upgrade -y</code></td>
+                <td>تحديث النظام بالكامل</td>
+            </tr>
+            <!-- أضف 69 أمرًا آخر بنفس النمط -->
+        </table>
+    </div>
+
+    <!-- قسم التحميلات -->
+    <div class="download-section">
+        <h2>📥 روابط التحميل الرسمية</h2>
+        <a href="https://www.kali.org/downloads/" class="download-btn" target="_blank">
+            ⬇️ كالي لينكس
+        </a>
+        <a href="https://ubuntu.com/download" class="download-btn" target="_blank">
+            🐧 أوبنتو
+        </a>
+    </div>
+
+    <!-- قسم التواصل -->
+    <div class="subsection" style="text-align: center;">
+        <h3>📞 تواصل معنا</h3>
+        <p>
+            <a href="https://deepsick.com" class="deepsick-link" target="_blank">
+                🌐 الموقع الرسمي
+            </a>
+            |
+            <a href="https://chat.openai.com" class="deepsick-link" target="_blank">
+                🤖 دردشة GPT
+            </a>
+        </p>
+    </div>
+</div>
+<!-- نهاية قسم التحميلات -->
+    <h2>كيف تصنع موقعًا بسيطًا؟ 🌐</h2>
+    <table>
+        <tr>
+            <th>الكود</th>
+        </tr>
+        <tr>
+            <td>
+                <code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;موقعي الأول&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;مرحبًا بك في موقعي!&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                </code>
+            </td>
+        </tr>
+    </table>
+    
+    <h2>ابدأ مغامرتك البرمجية اليوم! 🚀</h2>
+    <p>كل بطل في عالم التكنولوجيا بدأ من مكان صغير! استمر في التعلم والتجربة! 💡</p>
+  
+</body>
+</html>
+     
